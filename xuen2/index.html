@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>雪女2-剧情看点、角色关系与观影指南</title>
+<meta name="description" content="雪女2页面围绕这一影视续作关键词，整理剧情看点、角色关系、系列脉络、观影顺序与常见问题，帮助观众快速了解雪女2的故事背景与观看重点。">
+<meta name="keywords" content="雪女2,雪女2剧情,雪女2角色,雪女2看点,雪女系列,雪女2观影指南">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ice:#8fd3f4;
+    --ice-deep:#3a7ca5;
+    --night:#0e1a2b;
+    --night-soft:#17273d;
+    --snow:#f4f9fd;
+    --text:#22303f;
+    --text-light:#5c6f82;
+    --line:#dbe7f0;
+    --accent:#c94f6d;
+    --radius:14px;
+    --shadow:0 8px 26px rgba(22,48,74,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    background:var(--snow);
+    color:var(--text);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  /* ===== 顶部导航 ===== */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(14,26,43,.94);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(143,211,244,.22);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;
+    padding:14px 20px;
+    display:flex;align-items:center;justify-content:space-between;gap:18px;
+  }
+  .logo{
+    display:flex;align-items:center;gap:10px;
+    color:#fff;font-size:19px;font-weight:700;letter-spacing:.5px;
+  }
+  .logo-mark{
+    width:34px;height:34px;border-radius:50%;
+    background:radial-gradient(circle at 32% 30%,#ffffff,#8fd3f4 58%,#3a7ca5);
+    box-shadow:0 0 14px rgba(143,211,244,.65);
+    flex:0 0 auto;
+  }
+  .logo small{
+    display:block;font-size:11px;font-weight:400;color:#9fc4dd;letter-spacing:1px;
+  }
+  .main-nav{display:flex;gap:6px;flex-wrap:wrap;}
+  .main-nav a{
+    color:#cfe4f2;font-size:14px;padding:7px 13px;border-radius:20px;
+    transition:.22s;
+  }
+  .main-nav a:hover{background:rgba(143,211,244,.16);color:#fff;}
+
+  /* ===== 首屏 ===== */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(circle at 82% 12%,rgba(143,211,244,.30),transparent 46%),
+      radial-gradient(circle at 12% 88%,rgba(201,79,109,.20),transparent 48%),
+      linear-gradient(160deg,#0e1a2b 0%,#17273d 55%,#25415f 100%);
+    color:#eaf4fb;
+  }
+  .hero-inner{
+    max-width:1180px;margin:0 auto;
+    padding:64px 20px 58px;
+    display:grid;grid-template-columns:1.25fr .85fr;gap:44px;align-items:center;
+  }
+  .hero-tag{
+    display:inline-block;font-size:12.5px;letter-spacing:2px;
+    color:#bfe4fa;border:1px solid rgba(143,211,244,.5);
+    padding:4px 12px;border-radius:20px;margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(28px,4.4vw,44px);
+    line-height:1.3;font-weight:800;letter-spacing:1px;margin-bottom:16px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(90deg,#ffffff,#8fd3f4);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lead{
+    font-size:15.5px;color:#c3d8e8;max-width:600px;margin-bottom:26px;
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;padding:11px 24px;border-radius:26px;
+    font-size:14.5px;font-weight:600;transition:.24s;border:1px solid transparent;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,#8fd3f4,#3a7ca5);
+    color:#0b1726;box-shadow:0 8px 22px rgba(58,124,165,.42);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(58,124,165,.55);}
+  .btn-ghost{border-color:rgba(200,226,242,.55);color:#dcecf7;}
+  .btn-ghost:hover{background:rgba(143,211,244,.14);}
+
+  .hero-facts{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(143,211,244,.24);
+    border-radius:var(--radius);
+    padding:22px 24px;
+    backdrop-filter:blur(4px);
+  }
+  .hero-facts h2{
+    font-size:14px;color:#9fc4dd;font-weight:600;letter-spacing:1.5px;
+    margin-bottom:14px;text-transform:uppercase;
+  }
+  .fact-row{
+    display:flex;justify-content:space-between;gap:14px;
+    padding:9px 0;border-bottom:1px dashed rgba(143,211,244,.20);
+    font-size:14px;
+  }
+  .fact-row:last-child{border-bottom:none;}
+  .fact-row span:first-child{color:#9fc4dd;}
+  .fact-row span:last-child{color:#eaf4fb;font-weight:600;text-align:right;}
+
+  /* ===== 通用容器 ===== */
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
+  section{padding:56px 0;}
+  .sec-head{margin-bottom:30px;}
+  .sec-head .kicker{
+    font-size:12.5px;letter-spacing:2.5px;color:var(--ice-deep);
+    font-weight:700;text-transform:uppercase;
+  }
+  .sec-head h2{
+    font-size:clamp(21px,2.8vw,27px);margin:8px 0 10px;letter-spacing:.5px;
+  }
+  .sec-head p{color:var(--text-light);font-size:14.5px;max-width:760px;}
+
+  /* ===== 剧情看点 ===== */
+  .plot-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  }
+  .plot-card{
+    background:#fff;border-radius:var(--radius);padding:24px 22px;
+    box-shadow:var(--shadow);border-top:3px solid var(--ice);
+    transition:.24s;
+  }
+  .plot-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(22,48,74,.15);}
+  .plot-card .num{
+    font-size:13px;font-weight:800;color:#fff;background:var(--ice-deep);
+    width:28px;height:28px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+  }
+  .plot-card h3{font-size:16.5px;margin-bottom:9px;}
+  .plot-card p{font-size:14px;color:var(--text-light);}
+
+  /* ===== 角色区 ===== */
+  .roles{background:linear-gradient(180deg,#eef6fb,#ffffff);}
+  .role-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+  .role-item{
+    display:flex;gap:16px;background:#fff;border-radius:var(--radius);
+    padding:20px;box-shadow:var(--shadow);border-left:3px solid var(--accent);
+  }
+  .role-avatar{
+    width:52px;height:52px;flex:0 0 auto;border-radius:50%;
+    background:linear-gradient(140deg,#8fd3f4,#3a7ca5);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:800;font-size:18px;
+  }
+  .role-item h3{font-size:16px;margin-bottom:4px;}
+  .role-item .role-type{font-size:12.5px;color:var(--accent);font-weight:600;letter-spacing:.5px;}
+  .role-item p{font-size:13.8px;color:var(--text-light);margin-top:7px;}
+
+  /* ===== 系列脉络 ===== */
+  .timeline{position:relative;padding-left:28px;}
+  .timeline::before{
+    content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--ice),var(--ice-deep));
+    border-radius:2px;
+  }
+  .tl-item{position:relative;padding:0 0 26px 8px;}
+  .tl-item::before{
+    content:"";position:absolute;left:-26px;top:7px;width:11px;height:11px;
+    border-radius:50%;background:#fff;border:3px solid var(--ice-deep);
+  }
+  .tl-item h3{font-size:16px;margin-bottom:6px;}
+  .tl-item p{font-size:14px;color:var(--text-light);}
+
+  /* ===== 观影指南 ===== */
+  .guide{background:var(--night);color:#dbe9f4;}
+  .guide .sec-head h2{color:#fff;}
+  .guide .sec-head .kicker{color:var(--ice);}
+  .guide .sec-head p{color:#a9c3d6;}
+  .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .guide-card{
+    background:rgba(255,255,255,.055);
+    border:1px solid rgba(143,211,244,.20);
+    border-radius:var(--radius);padding:22px;
+  }
+  .guide-card h3{font-size:16px;color:#fff;margin-bottom:10px;}
+  .guide-card ul{list-style:none;font-size:14px;color:#b7cddd;}
+  .guide-card li{padding-left:16px;position:relative;margin-bottom:8px;}
+  .guide-card li::before{
+    content:"";position:absolute;left:0;top:10px;width:6px;height:6px;
+    border-radius:50%;background:var(--ice);
+  }
+
+  /* ===== 常见问题 ===== */
+  .faq-list{max-width:860px;}
+  .faq-item{
+    background:#fff;border-radius:12px;margin-bottom:12px;
+    border:1px solid var(--line);overflow:hidden;
+  }
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:17px 20px;font-size:15.5px;font-weight:600;color:var(--text);
+    display:flex;justify-content:space-between;align-items:center;gap:14px;
+    font-family:inherit;
+  }
+  .faq-q .arrow{
+    flex:0 0 auto;width:20px;height:20px;border-radius:50%;
+    background:var(--ice);color:#0b1726;font-size:13px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;transition:.25s;
+  }
+  .faq-item.open .faq-q .arrow{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0;overflow:hidden;transition:max-height .3s ease;
+    font-size:14.2px;color:var(--text-light);
+  }
+  .faq-a p{padding:0 20px 18px;}
+  .faq-item.open .faq-a{max-height:320px;}
+
+  /* ===== 侧栏推荐 ===== */
+  .bottom-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:26px;align-items:start;}
+  .note-box{
+    background:#fff;border-radius:var(--radius);padding:24px;
+    box-shadow:var(--shadow);border:1px solid var(--line);
+  }
+  .note-box h3{font-size:17px;margin-bottom:12px;}
+  .note-box p{font-size:14.2px;color:var(--text-light);margin-bottom:10px;}
+  .tag-cloud{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px;}
+  .tag-cloud span{
+    font-size:13px;color:var(--ice-deep);background:#eaf5fc;
+    border:1px solid #cfe7f6;border-radius:18px;padding:5px 13px;
+  }
+
+  /* ===== 页脚 ===== */
+  .site-footer{
+    background:var(--night-soft);color:#9fb8ca;padding:40px 0 26px;font-size:13.5px;
+  }
+  .footer-grid{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:26px;
+  }
+  .site-footer h4{color:#e6f1f9;font-size:14.5px;margin-bottom:12px;letter-spacing:.5px;}
+  .site-footer ul{list-style:none;}
+  .site-footer li{margin-bottom:8px;}
+  .site-footer a:hover{color:var(--ice);}
+  .footer-bottom{
+    border-top:1px solid rgba(143,211,244,.16);padding-top:18px;
+    text-align:center;font-size:12.5px;color:#7d97ab;
+  }
+
+  /* ===== 响应式 ===== */
+  @media (max-width:960px){
+    .hero-inner{grid-template-columns:1fr;gap:32px;padding:48px 20px 44px;}
+    .plot-grid{grid-template-columns:repeat(2,1fr);}
+    .guide-grid{grid-template-columns:1fr;}
+    .bottom-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:680px){
+    .header-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+    .main-nav a{padding:6px 10px;font-size:13.5px;}
+    .plot-grid{grid-template-columns:1fr;}
+    .role-list{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;gap:22px;}
+    section{padding:40px 0;}
+    .hero h1{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>雪女2<small>影视续作资料站</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#plot">剧情看点</a>
+      <a href="#roles">角色关系</a>
+      <a href="#series">系列脉络</a>
+      <a href="#guide">观影指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">续作 · 奇幻 · 冰雪题材</span>
+        <h1>雪女2：<em>延续冰雪传说</em>的续作看点与观看指南</h1>
+        <p class="lead">
+          当一部作品以“雪女”为题，观众最关心的往往是两件事：这个续作讲了什么，以及需要先了解哪些前情。
+          本页围绕“雪女2”这一关键词，梳理续作常见的剧情走向、角色关系、系列脉络与观看顺序，
+          帮助你在打开影片之前，先建立起清晰的故事坐标。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#plot">先看剧情看点</a>
+          <a class="btn btn-ghost" href="#guide">了解观看顺序</a>
+        </div>
+      </div>
+      <aside class="hero-facts">
+        <h2>快速了解</h2>
+        <div class="fact-row"><span>作品类型</span><span>奇幻 / 冰雪题材续作</span></div>
+        <div class="fact-row"><span>核心母题</span><span>雪女传说与人性抉择</span></div>
+        <div class="fact-row"><span>观看前提</span><span>建议先了解第一部设定</span></div>
+        <div class="fact-row"><span>适合人群</span><span>奇幻题材与民俗传说爱好者</span></div>
+        <div class="fact-row"><span>本页内容</span><span>看点、角色、顺序、答疑</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 剧情看点 -->
+  <section id="plot">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Story Highlights</div>
+        <h2>雪女2的剧情看点从哪里切入</h2>
+        <p>
+          续作通常不会从零开始讲故事，而是在前作的世界观上继续推进。理解“雪女2”，
+          可以从世界观扩展、人物动机变化和情绪基调三个方向入手，这也是观众讨论最多的部分。
+        </p>
+      </div>
+      <div class="plot-grid">
+        <article class="plot-card">
+          <div class="num">1</div>
+          <h3>世界观如何延续</h3>
+          <p>
+            雪女题材大多建立在寒冷、孤绝的自然意象之上。续作往往会保留这一基调，
+            同时把故事舞台从单一场景扩展到更复杂的环境，让"冷"从气候变成一种叙事氛围。
+          </p>
+        </article>
+        <article class="plot-card">
+          <div class="num">2</div>
+          <h3>人物动机的转变</h3>
+          <p>
+            续作中的角色很少停留在原处。前作里出于本能或契约的行为，在第二部中常常被替换为
+            更主动的选择，人物的挣扎也因此从"被迫"转向"自愿承担"。
+          </p>
+        </article>
+        <article class="plot-card">
+          <div class="num">3</div>
+          <h3>情感线与冲突升级</h3>
+          <p>
+            人与非人之间的情感张力，是雪女故事最常见的核心。续作通常会让这段关系面对更现实的考验，
+            例如身份暴露、外界介入或时间带来的疏离。
+          </p>
+        </article>
+        <article class="plot-card">
+          <div class="num">4</div>
+          <h3>视觉与氛围表达</h3>
+          <p>
+            冰雪题材在画面上有天然优势。续作一般会在雪景、雾气、光影上做更细腻的处理，
+            用视觉语言强化"美丽与危险并存"的主题。
+          </p>
+        </article>
+        <article class="plot-card">
+          <div class="num">5</div>
+          <h3>与前作的呼应细节</h3>
+          <p>
+            续作常埋入对前作的呼应，例如重复出现的物件、台词或场景构图。
+            留意这些细节，能更完整地理解创作者的表达意图。
+          </p>
+        </article>
+        <article class="plot-card">
+          <div class="num">6</div>
+          <h3>结局的开放性</h3>
+          <p>
+            不少续作会保留一定的开放空间，把答案留给观众。与其急于判断"好结局还是坏结局"，
+            不如关注角色是否完成了自我选择。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 角色关系 -->
+  <section id="roles" class="roles">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Characters</div>
+        <h2>角色关系：续作中的人物位置</h2>
+        <p>
+          以下按续作中常见的角色功能类型进行梳理，帮助你在观看时快速定位每个人物在故事里的作用。
+          具体人名与设定请以实际作品为准。
+        </p>
+      </div>
+      <div class="role-list">
+        <article class="role-item">
+          <div class="role-avatar" aria-hidden="true">雪</div>
+          <div>
+            <h3>雪女本体</h3>
+            <div class="role-type">核心存在</div>
+            <p>
+              故事的中心角色。她既是危险的象征，也是情感投射的对象。
+              续作通常会让她的立场变得更暧昧，从"传说中的人物"走向"有具体烦恼的个体"。
+            </p>
+          </div>
+        </article>
+        <article class="role-item">
+          <div class="role-avatar" aria-hidden="true">人</div>
+          <div>
+            <h3>人类主角</h3>
+            <div class="role-type">视角人物</div>
+            <p>
+              观众代入的入口。他的选择往往决定了故事的走向，也承载着"人能否与非人共存"这一命题的讨论。
+            </p>
+          </div>
+        </article>
+        <article class="role-item">
+          <div class="role-avatar" aria-hidden="true">引</div>
+          <div>
+            <h3>引导者或知情者</h3>
+            <div class="role-type">信息提供者</div>
+            <p>
+              通常是长者、同行者或掌握旧事的人。他们负责补充世界观背景，也常因立场不同而与主角产生分歧。
+            </p>
+          </div>
+        </article>
+        <article class="role-item">
+          <div class="role-avatar" aria-hidden="true">对</div>
+          <div>
+            <h3>对立面角色</h3>
+            <div class="role-type">冲突推动者</div>
+            <p>
+              可能是猎人、组织或另一位非人存在。他们的存在让故事从情感叙事转向更明确的对抗结构。
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 系列脉络 -->
+  <section id="series">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Series Order</div>
+        <h2>系列脉络与观看顺序建议</h2>
+        <p>
+          面对带编号的续作，观众最容易困惑的是"要不要先看第一部"。以下按常见情况给出建议，
+          你可以根据自己的时间和兴趣选择。
+        </p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <h3>第一步：了解前作基础设定</h3>
+          <p>
+            先弄清楚雪女的来历、她与人类主角的相遇方式，以及前作留下的悬念。
+            即使不完整观看，至少了解结局走向，能显著减少续作中的理解断层。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>第二步：确认续作的时间线位置</h3>
+          <p>
+            续作可能是紧接前作，也可能是若干年后的故事。时间跨度的不同，
+            会直接影响角色状态和情感基础，这一点在观看前值得留意。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>第三步：按顺序观看正片</h3>
+          <p>
+            如果续作直接延续前作剧情，建议按发布顺序观看；如果是独立篇章，
+            也可以先从续作入手，再回看前作补全背景。
+          </p>
+        </div>
+        <div class="tl-item">
+          <h3>第四步：回看细节与伏笔</h3>
+          <p>
+            看完之后再回看前作中的关键场景，往往能发现此前忽略的呼应。
+            这也是系列作品最耐人寻味的部分。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观影指南 -->
+  <section id="guide" class="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Viewing Guide</div>
+        <h2>观看雪女2之前，可以准备的几件事</h2>
+        <p>不需要复杂的前置功课，抓住下面三点，就能更顺畅地进入故事。</p>
+      </div>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <h3>理解题材背景</h3>
+          <ul>
+            <li>雪女属于东亚民俗传说中的形象，常与寒冷、孤寂相关联</li>
+            <li>不同作品对雪女的性格设定差异较大，不必套用固定印象</li>
+            <li>了解题材来源，有助于理解作品的情绪基调</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3>把握观看节奏</h3>
+          <ul>
+            <li>先看设定与人物介绍，再看正片，理解成本更低</li>
+            <li>遇到回忆片段时，留意它与当前时间线的对应关系</li>
+            <li>结尾处如有留白，可结合前作一起理解</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3>理性看待续作</h3>
+          <ul>
+            <li>续作与前作风格可能不同，属正常创作选择</li>
+            <li>不必以"是否超越前作"作为唯一评价标准</li>
+            <li>关注作品自身想表达的内容，观感会更完整</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 + 侧栏 -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">FAQ</div>
+        <h2>关于雪女2的常见问题</h2>
+        <p>整理观众在了解这类续作时最常提出的疑问，点击问题即可展开查看。</p>
+      </div>
+
+      <div class="bottom-grid">
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              没看过第一部，能直接看雪女2吗？
+              <span class="arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                可以尝试，但体验会受影响。续作通常会默认观众了解前作的人物关系和世界观设定，
+                直接观看可能会出现"人物为什么这样做"的困惑。如果时间有限，建议至少了解前作的主要剧情和结局。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              雪女2和前作是同一时间线吗？
+              <span class="arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                这取决于具体作品的设定。续作可能是紧接前作的延续，也可能是相隔数年后的新故事。
+                观看前确认时间线位置，有助于理解角色的状态变化。具体信息请以作品官方介绍为准。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              这类题材适合哪些观众？
+              <span class="arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                通常适合喜欢奇幻设定、民俗传说、人与非人关系题材的观众。
+                如果作品包含惊悚或压抑元素，对氛围敏感的观众可以提前了解大致基调，再决定是否观看。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              续作的评价一定不如前作吗？
+              <span class="arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                不一定。续作有时会在人物刻画或主题表达上走得更远，只是风格可能与前作不同。
+                评价一部作品，更适合结合它自身的表达目标来判断，而不是简单地与前作比较高低。
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              在哪里可以了解更准确的官方信息？
+              <span class="arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a">
+              <p>
+                建议以作品官方渠道发布的信息为准，例如官方账号、发行方公告或正规平台的条目页。
+                网络上的讨论和二次解读可以作为参考，但不宜直接当作事实依据。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="note-box" style="margin-bottom:20px;">
+            <h3>阅读提示</h3>
+            <p>
+              本页内容围绕"雪女2"这一关键词，从续作观看角度整理通用的理解框架，
+              不涉及对具体作品情节的断言。实际剧情、角色名称与设定，请以官方发布为准。
+            </p>
+            <p>
+              如果你正在寻找观看顺序或前情回顾，可以先从"系列脉络"部分开始阅读。
+            </p>
+          </div>
+          <div class="note-box">
+            <h3>相关话题</h3>
+            <div class="tag-cloud">
+              <span>雪女传说</span>
+              <span>续作解读</span>
+              <span>奇幻题材</span>
+              <span>人物关系</span>
+              <span>观看顺序</span>
+              <span>民俗元素</span>
+              <span>冰雪意象</span>
+              <span>前情回顾</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>雪女2 · 影视续作资料站</h4>
+        <p>
+          一个围绕"雪女2"关键词整理的信息页面，帮助观众在观看前建立剧情、角色与系列脉络的整体认知。
+          内容以通用观看框架为主，具体设定请以官方信息为准。
+        </p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#plot">剧情看点</a></li>
+          <li><a href="#roles">角色关系</a></li>
+          <li><a href="#series">系列脉络</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容说明</h4>
+        <ul>
+          <li>不提供影片下载或在线播放</li>
+          <li>不含剧透式情节断言</li>
+          <li>以官方发布信息为准</li>
+          <li>适合观影前快速了解</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 雪女2 影视续作资料站 · 本页为关键词主题信息整理页面，内容仅供观影参考
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function (el) {
+        el.classList.remove('open');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+      }
+    });
+  });
+</script>
+
+</body>
+  </html>
